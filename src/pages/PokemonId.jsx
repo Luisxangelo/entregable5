@@ -103,9 +103,9 @@ useEffect(() => {
 
 
   return (
-    <main>
+    <main className="">
         <Header/>
-
+        <section>  
         <section className=" grid justify-center m-8 shadow-lg shadow-slate-500">
         <section className={`relative h-32 w-[500px]  ${pokeLinearGradients[pokemon?.types[0].type.name]}`} >
 
@@ -169,7 +169,7 @@ useEffect(() => {
                       <span>{stat.base_stat}</span>
                     </section>
                   {/* Barra de progreso */}
-                  <div className="bg-gray-500 h-8 rounded-md overflow-hidden m-2">
+                  <div className="bg-gray-500 h-8 rounded-md overflow-hidden m-2 ">
                     <div style={{width: porcentProgressStat(stat.base_stat)}} className={"h-full bg-yellow-400"}></div>
                   </div>
                   </article>
@@ -185,6 +185,7 @@ useEffect(() => {
             </section>
 
           </article>
+        </section>
         </section>
     </main>
   )

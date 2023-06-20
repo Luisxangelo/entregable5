@@ -95,7 +95,7 @@ const PokemonCards = ({pokemonUrl}) => {
   
 
   return (
-    <Link to={`/pokedex/${pokemon?.name} `} className={` min-[120px]:w-72 m-8 shadow-md shadow-slate-500 ${pokeLinearGradientsborder[pokemon?.types[0].type.name]} `}>
+    <Link to={`/pokedex/${pokemon?.name} `} className={` min-[320px]:w-14 m-8 shadow-md shadow-slate-500 ${pokeLinearGradientsborder[pokemon?.types[0].type.name]} `}>
       {/* Seccion superior */}
       <section className={`relative h-40 ${pokeLinearGradients[pokemon?.types[0].type.name]}`} >
 
