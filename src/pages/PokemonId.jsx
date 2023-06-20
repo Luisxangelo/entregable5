@@ -144,12 +144,12 @@ useEffect(() => {
               <section className="grid grid-cols-2">
                 <div className="grid grid-cols-2">
                   <h4 className={`text-sm text-white m-2 rounded-lg ${pokeLinearGradients[pokemon?.types[0].type.name]}`}>{pokemon?.types[0].type.name}</h4>
-                  <h4 className={`text-sm text-white m-2 rounded-lg ${pokeLinearGradients[pokemon?.types[1].type.name]}`}>{pokemon?.types[1].type.name}</h4>
+                  {pokemon?.types[1] && <h4 className={`text-sm text-white m-2 rounded-lg ${pokeLinearGradients[pokemon?.types[1].type.name]}`}>{pokemon?.types[1].type.name}</h4>}
                 </div>
 
                 <div className="grid grid-cols-2">
-                  <h4 className={`text-sm  m-2 rounded-lg ${pokeLinearGradientsborder[pokemon?.types[0].type.name]}`}>{pokemon?.abilities[0].ability.name}</h4>
-                  <h4 className={`text-sm  m-2 rounded-lg ${pokeLinearGradientsborder[pokemon?.types[1].type.name]}`}>{pokemon?.abilities[1].ability.name}</h4>
+                  <h4 className="text-sm  m-2 rounded-lg shadow-slate-400 shadow-sm">{pokemon?.abilities[0].ability.name}</h4>
+                  {pokemon?.abilities[1] && <h4 className="text-sm  m-2 rounded-lg shadow-slate-400 shadow-sm">{pokemon?.abilities[1].ability.name}</h4>}
                 </div>
               </section>
 
